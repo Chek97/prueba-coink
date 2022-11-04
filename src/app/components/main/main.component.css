@@ -1,0 +1,44 @@
+.main-container {
+    background-color: #F2F2F2;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #004B40;
+    color: #fff;
+}
+
+.icon-container {
+    padding: 20px;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+header {
+    color: #004B40;
+}
+
+header > h1 {
+    font-weight: 700;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 10px;
+}
+
+.inputs-container {
+    display: flex;
+}
+
+table {
+    margin-top: 10px;
+    width: 100%;
+}

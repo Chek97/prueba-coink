@@ -1,0 +1,70 @@
+<div class="main-container">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="icon-container">
+      <fa-icon [icon]="faBars"></fa-icon>
+    </div>
+    <h2>BACKOFFICE</h2>
+    <div class="icon-container">
+      <fa-icon [icon]="faUserCircle"></fa-icon>
+    </div>
+  </nav>
+  <!-- Asidebar -->
+  <div class="main-content">
+    <!-- breadcumb -->
+    <header>
+      <h1>SOLICITUD TARJETAS</h1>
+    </header>
+    <p>
+      <fa-icon [icon]="faSearch"></fa-icon> Buscar
+    </p>
+    <div class="inputs-container">
+      <div class="input-box">
+        <label for="">Nombre</label>
+        <mat-form-field class="example-full-width" appearance="fill">
+          <input matInput #inputName>
+        </mat-form-field>
+      </div>
+      <div class="input-box">
+        <label for="">Tipo de personaje</label>
+        <mat-form-field class="example-full-width" appearance="fill">
+          <input matInput>
+        </mat-form-field>
+      </div>
+    </div>
+    <button class="btn-clean">Limpiar Filtros</button>
+    <button (click)="search(inputName.value)" class="btn-search">Buscar</button>
+    <div style="text-align: right;">
+      <button class="btn-request">Solicitar Tarjetas</button>
+    </div>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">    
+      <!-- Position Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef style="background-color: #004B40; color: #FFF;"> Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+      </ng-container>
+    
+      <!-- Name Column -->
+      <ng-container matColumnDef="gender">
+        <th mat-header-cell *matHeaderCellDef style="background-color: #004B40; color: #FFF;"> Gender </th>
+        <td mat-cell *matCellDef="let element"> {{element.gender}} </td>
+      </ng-container>
+    
+      <!-- Weight Column -->
+      <ng-container matColumnDef="species">
+        <th mat-header-cell *matHeaderCellDef style="background-color: #004B40; color: #FFF;"> Species </th>
+        <td mat-cell *matCellDef="let element"> {{element.species}} </td>
+      </ng-container>
+    
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="created">
+        <th mat-header-cell *matHeaderCellDef style="background-color: #004B40; color: #FFF;"> Created </th>
+        <td mat-cell *matCellDef="let element"> {{element.created | date: 'longDate'}} </td>
+      </ng-container>
+    
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    
+  </div>
+</div>

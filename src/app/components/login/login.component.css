@@ -1,0 +1,118 @@
+.main-container {
+    width: 100vw;
+    display: flex;
+}
+
+aside {
+    width: 40%;
+    background-color: #001B24;
+    padding: 20px;
+}
+
+.aside-title {
+    color: #C4F6DC;
+    padding: 20% 20% 0 20%;
+    font-weight: 500;
+    text-align: center;
+}
+
+aside > img {
+    display: block;
+    margin: auto;
+}
+
+.aside-text {
+    color: #C4F6DC;
+    padding: 10px 30%;
+    font-weight: 500;
+    text-align: center;
+}
+
+.form-container {
+    background-color: #F2F2F2;
+    width: 60%;
+}
+
+.register-text {
+    text-align: right;
+    padding: 10px 40px;
+    margin-top: 30px;
+    color: #212121;
+}
+
+.register-text > p > a {
+    color: #001B24;
+    text-decoration: none;
+}
+
+.login-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.login-form-container > form {
+    min-width: 200px;
+}
+
+.login-title {
+    color: #001B24;
+}
+
+.input-group {
+    margin: 40px 0 10px 0;
+}
+
+.input-group > p {
+    color: #212121;
+    font-size: 14px;
+    margin: 0;
+}
+
+.login-input {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #BDBDBD;
+    color: #212121;
+}
+
+.login-form-container > form > small {
+    color: #004B40;
+    font-weight: 500;
+}
+
+.icon {
+    position: absolute;
+    text-align: right;
+    right: 50px;
+    margin-top: 15px;
+    color: #212121;
+}
+
+.login-button {
+    margin: 40px;
+    text-align: center;
+    width: 350px;
+}
+
+.login-button > button {
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    background-color: #003336;
+    color: #FFFF;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.forget-link {
+    color: #001B24;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: 500;
+}

@@ -1,0 +1,44 @@
+<div class="main-container">
+    <aside>
+        <h1 class="aside-title">!Bienvenido a la herramienta de registro Coink!</h1>
+        <img src="./assets/images/imagen1.PNG" alt="image-poster">
+        <p class="aside-text">
+            Coink para tu dia a dia.
+            Empieza ahorrando y cumple tus sueños con proposito.
+        </p>
+        <img src="./assets/images/imagen2.PNG" alt="">
+    </aside>
+    <div class="form-container">
+        <div class="register-text">
+            <p>¿Aún no tienes una cuenta? <a href="#">Registrate ahora</a></p>
+        </div>
+        <div class="login-form-container">
+            <header class="login-title">
+                <h2>Iniciar sesión en Coink</h2>
+            </header>
+            <form action="">
+                <div class="input-group">
+                    <p>Correo electrónico</p>
+                    <div>
+                        <fa-icon [icon]="faUser" class="icon"></fa-icon>
+                        <input type="text" class="login-input" placeholder="Correo electrónico">    
+                    </div>
+                </div>
+                <div class="input-group">
+                    <p>Contraseña</p>
+                    <div>
+                        <fa-icon [icon]="faEye" class="icon"></fa-icon>
+                        <input type="text" class="login-input" placeholder="contraseña">
+                    </div>
+                </div>
+                <input type="checkbox" id="remember"><small>Recordarme</small>
+                <div class="login-button">
+                    <button>Iniciar sesión</button>
+                </div>
+                <div style="text-align: center;">
+                    <a href="#" class="forget-link">¿Olvidaste tu contraseña?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
