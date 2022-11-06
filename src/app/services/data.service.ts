@@ -14,7 +14,7 @@ export class DataService {
     return this.http.get(this.url);
   }
 
-  getCharacterByName(name: string){
-    return this.http.get(`https://rickandmortyapi.com/api/character/?name=${name}`);
+  getCharacterByName(name: string, type: string){
+    return this.http.get(`https://rickandmortyapi.com/api/character/?name=${name}&type=${type}`);
   }
 }
